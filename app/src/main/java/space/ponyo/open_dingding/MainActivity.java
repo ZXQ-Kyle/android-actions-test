@@ -26,15 +26,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         Timer timer = new Timer();
         Context _this = this;
-        int delay = (int) (Math.random() * 3);
-        btn.setText(String.valueOf(delay));
+        int delay = (int) (Math.random() * 10);
+        btn.setText(String.valueOf(delay) + " 分钟");
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
                 startDingtalkApp(_this);
             }
         }, delay * 60 * 1000L);
-
         super.onResume();
     }
 
