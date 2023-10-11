@@ -7,7 +7,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "space.ponyo.open_dingding"
+        applicationId "space.ponyo.notifyElectricity"
         minSdk 24
         targetSdk 33
         versionCode 1
